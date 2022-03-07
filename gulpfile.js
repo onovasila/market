@@ -8,7 +8,7 @@ uglify = require('gulp-uglify');
 cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(rename({suffix : '.min'}))
         .pipe(autoprefixer({
