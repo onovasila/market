@@ -7,6 +7,59 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?5hu2w');
+    src:  url('../fonts/icomoon.eot?5hu2w#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?5hu2w') format('truetype'),
+      url('../fonts/icomoon.woff?5hu2w') format('woff'),
+      url('../fonts/icomoon.svg?5hu2w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+  .icon-chevron-right:before {
+    content: "\f054";
+  }
+  .icon-shopping-cart:before {
+    content: "\f07a";
+  }
+  .icon-phone:before {
+    content: "\f095";
+  }
+  .icon-bolt:before {
+    content: "\f0e7";
+  } 
+  .icon-flash:before {
+    content: "\f0e7";
+  }
+  .icon-location-arrow:before {
+    content: "\f124";
+  }
+  .icon-copyright:before {
+    content: "\f1f9";
+  }
+  
+
 
 html {
     box-sizing: border-box;
@@ -508,5 +561,170 @@ li {
 
     }
 }
-
 //tutorial end
+//footer start
+footer {
+    background-color: #263238;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 115px 0 95px;
+}
+
+
+
+.footer__copy {
+    padding: 25px 0 35px;
+    border-top: 1px solid #424d53;
+}
+
+.footer__copy-text {
+    text-align: center;  
+    color:#919699;
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+    &-menu {
+        max-width: 220px;
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 700;
+        font-family: "Raleway", sans-serif;
+        color: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: #8bc34a;
+        }
+    }
+    &-text {
+        color: #b7c3c8;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #b7c3c8;
+    }
+    &-info {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: semibold;
+        font-family: 'Lato', sans-serif;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            position: absolute;
+            content: '\f041';
+            font-family: icomoon;
+            font-size: 18px;
+            color:#8bc34a;
+            left: 0;        
+        }      
+    }
+    &-tel {
+        font-family: 'Lato', sans-serif;
+        color: #fff;
+        font-weight: semibold;
+        &::before{
+            content: '\f095';    
+        } 
+        a {
+            color: #fff;
+        }
+
+                          
+        } 
+    }
+
+    .footer__col-list {
+        a{
+            margin-bottom: 15px;
+            color: #b7c3c8;
+            padding-left: 23px;     
+            position: relative;
+            &::before {
+                content: '\f054';
+                font-family: icomoon;
+                font-size: 18px;
+                color: #8bc34a;         
+                position: absolute;  
+                left: 0;
+            }
+        }  
+    }
+    .footer__social-link {
+        display: flex;
+        justify-content: space-between;
+        max-width: 170px;
+        margin-bottom: 40px;
+           
+        a {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            text-align: center;      
+        }
+        .in {
+            border-radius: 2px;
+        }
+
+    }
+
+    .footer__form {
+        position: relative;
+        &-title {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        input {
+            height: 40px;
+            background-color: #2f3c43;
+            border: 0;
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 14px;
+            padding-right: 50px;
+            outline: none;
+            &::placeholder {
+                color: #697378;            
+            }
+        }
+        button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #8bc34a;
+            border: none;
+            height: 40px;
+            width: 43px;
+            cursor: pointer; 
+            &::before {
+                content:"\f124";
+                font-family: icomoon;
+                font-size: 20px;
+                color: #fff;
+                top: 11px;
+                left: 13px;
+            }
+        }
+    }
+      
+
+//footer end
